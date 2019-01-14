@@ -17,7 +17,6 @@ namespace AccessTest
         {
             InitializeComponent();
             ConnectToAccess();
-            //InsertIntoDatabase("INSERT INTO Objects (ObjectName, ObjectDescription) VALUES ('I dont know what the fuck this is', 'Oh god, please help, it might be sentient');");
             var values = DBSelect("SELECT * FROM Objects");
             this.FormClosing += delegate { CloseConnection(); };
         }
